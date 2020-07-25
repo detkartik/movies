@@ -1,0 +1,11 @@
+<div class="layout">
+  <app-movie-list
+    [movies]="movies"
+    (selectMovie)="selectMovie($event)"
+  ></app-movie-list>
+
+  <app-movie-details
+    [movie]="this.selectedMovies"
+    (updateMovie)="selectMovie($event)"
+  ></app-movie-details>
+</div>
